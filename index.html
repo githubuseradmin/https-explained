@@ -108,7 +108,8 @@
         <button class="btn" id="btn-prev" type="button" aria-label="Previous step">
           <span aria-hidden="true">&#9664;</span> Prev
         </button>
-        <button class="btn btn-play" id="btn-play" type="button" aria-label="Play the animation through all steps">
+        <button class="btn btn-play" id="btn-play" type="button" aria-pressed="false"
+          aria-label="Play the animation through all steps">
           <span class="btn-play-icon" aria-hidden="true">&#9654;</span>
           <span class="btn-play-text">Play</span>
         </button>
@@ -119,6 +120,17 @@
           <span aria-hidden="true">&#8635;</span> Replay
         </button>
       </div>
+
+      <!-- Keyboard hint legend -->
+      <p class="kbd-hints">
+        <kbd>&larr;</kbd><kbd>&rarr;</kbd> step
+        <span class="kbd-sep" aria-hidden="true">·</span>
+        <kbd>Space</kbd> play / pause
+        <span class="kbd-sep" aria-hidden="true">·</span>
+        <kbd>R</kbd> replay
+        <span class="kbd-sep" aria-hidden="true">·</span>
+        <kbd>Home</kbd><kbd>End</kbd> first / last
+      </p>
     </section>
 
     <!-- Side panel: explanation + protocol facts + security note -->
@@ -145,6 +157,24 @@
     </aside>
   </main>
 
+  <!-- The whole journey at a glance: a compact, jump-to timeline -->
+  <section class="extra" aria-labelledby="timeline-h">
+    <h2 class="extra-h" id="timeline-h">The whole journey at a glance</h2>
+    <p class="extra-sub">Seven stages from keystroke to pixels. Select any one to jump to it.</p>
+    <ol class="timeline" id="timeline">
+      <!-- Filled by app.js from the STEPS data -->
+    </ol>
+  </section>
+
+  <!-- Beginner-friendly glossary of the acronyms used above -->
+  <section class="extra" aria-labelledby="glossary-h">
+    <h2 class="extra-h" id="glossary-h">Glossary</h2>
+    <p class="extra-sub">Quick plain-language definitions for the terms in this walkthrough.</p>
+    <dl class="glossary" id="glossary-list">
+      <!-- Filled by app.js from the GLOSSARY data -->
+    </dl>
+  </section>
+
   <footer class="site-footer">
     <p>
       A networking explainer by a self-taught dev into security &amp; low-level systems.
@@ -156,6 +186,8 @@
     </p>
   </footer>
 
+  <!-- steps.js holds the content + pure helpers; app.js is the DOM/animation glue. -->
+  <script src="steps.js" defer></script>
   <script src="app.js" defer></script>
 </body>
 

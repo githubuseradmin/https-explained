@@ -26,5 +26,8 @@ dist/
 .env
 .env.local
 
+# ---- Local preview / harness tooling (not part of the site) ----
+.claude/
+
 # ---- Misc ----
 .history/
