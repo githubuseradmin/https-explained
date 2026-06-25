@@ -1,0 +1,30 @@
+# ---- OS cruft ----
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ---- Editor / IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ---- Logs & temp ----
+*.log
+npm-debug.log*
+*.tmp
+*.bak
+
+# ---- Local dev servers / tooling (none required, but just in case) ----
+node_modules/
+.cache/
+dist/
+.env
+.env.local
+
+# ---- Misc ----
+.history/
