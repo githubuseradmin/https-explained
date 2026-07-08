@@ -2,14 +2,22 @@ English | [Русский](README.ru.md)
 
 # https-explained
 
+![CI](https://github.com/githubuseradmin/https-explained/actions/workflows/ci.yml/badge.svg)
+![tests](https://img.shields.io/badge/tests-15_passing-brightgreen)
+![license](https://img.shields.io/badge/license-MIT-blue)
+![built with](https://img.shields.io/badge/HTML%20·%20CSS%20·%20JS-informational)
+
+**[▶ Live demo](https://githubuseradmin.github.io/https-explained/)**
+
 An interactive, animated single-page explainer of **what actually happens when you
 type an `https://` URL and press Enter** — from URL parsing all the way to the
-browser painting pixels.
+browser painting pixels. Built for anyone who wants a *correct* mental model of the
+request lifecycle — students, bootcamp instructors, and engineers refreshing the
+fundamentals.
 
-It is built for people who want a *correct* mental model of the request lifecycle:
-DNS, TCP, TLS, HTTP and rendering, each as a navigable step with a moving-packet
-diagram, a precise explanation, the relevant OSI layer / port / protocol, and a
-"what could go wrong" security note.
+Every stage of the lifecycle — DNS, TCP, TLS, HTTP and rendering — is a navigable
+step with a moving-packet diagram, a precise explanation, the relevant OSI layer /
+port / protocol, and a "what could go wrong" security note.
 
 Pure HTML / CSS / JavaScript. **No build step, no framework, no runtime
 dependencies.** The only network asset is a Google Font loaded via `<link>`.
